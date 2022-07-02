@@ -1,0 +1,56 @@
+.col {
+  font-family: "Permanent Marker", cursive;
+  font-family: "Poppins", sans-serif;
+}
+#mainCity,
+#temp {
+  font-size: 28px;
+  color: #7c7c7c;
+  font-style: italic;
+}
+.col {
+  font-size: 12px;
+}
+
+.temperature {
+  color: #668bed;
+  font-weight: 900;
+}
+.buTTon {
+  background-color: #668bed;
+  border: 0ch;
+  border-radius: 20px;
+  box-shadow: 5px 2px 2px lightgrey;
+  color: #7c7c7c;
+}
+.buTTon:hover {
+  background: rgb(214, 214, 133);
+  transition: all 200ms ease-in-out;
+  box-shadow: 5px 2px 2px lightgrey;
+}
+
+#city {
+  border-radius: 30px;
+  box-shadow: 5px 2px 2px lightgrey;
+  padding: 5px 10px;
+  color: #7c7c7c;
+  border: 1px solid #dadde1;
+  width: 50%;
+}
+ul {
+  list-style-type: none;
+}
+#geo {
+  background-color: #55c677;
+  opacity: 70%;
+  border: 0ch;
+  border-radius: 20px;
+  box-shadow: 5px 2px 2px lightgrey;
+  padding: 5px 10px;
+  color: black;
+}
+#geo:hover {
+  background: rgb(214, 214, 133);
+  transition: all 200ms ease-in-out;
+  box-shadow: 5px 2px 2px lightgrey;
+}

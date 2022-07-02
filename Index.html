@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/57f9937500.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card" id="sky" style="width: 28rem">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6" id="mainCity">Kyiv</div>
+            <div class="col" id="temp">25 ℃</div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li id="Current-day">Saturday</li>
+                <li id="Current-date">4.June</li>
+              </ul>
+            </div>
+
+            <div class="col" id="li">
+              <ul>
+                <li id="humidity">Humidity : 80%</li>
+                <li id="wind">Wind : 2 km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 28rem">
+        <div class="card-body">
+          <form
+            class="search-form"
+            id="search-form"
+            class="form-control shadow-sm"
+          >
+            <input
+              type="search"
+              id="city"
+              placeholder="Enter city"
+              autofocus="on"
+            />
+            <input type="submit" id="search" value="Go" class="buTTon" />
+            <input type="submit" id="geo" value="Geolocation" />
+          </form>
+        </div>
+      </div>
+
+      <div class="card" style="width: 28rem">
+        <div class="card-body">
+          <div class="row row-cols-3">
+            <div class="col">Today</div>
+            <div class="col"><p class="temperature">8℃/25℃</p></div>
+            <div class="col">☀️</div>
+            <div class="col">Sun</div>
+            <div class="col"><p class="temperature">5℃/24℃</p></div>
+            <div class="col">☀️</div>
+            <div class="col">Mon</div>
+            <div class="col"><p class="temperature">11℃/27℃</p></div>
+            <div class="col"><i class="fa-solid fa-wind"></i></div>
+            <div class="col">Tue</div>
+            <div class="col"><p class="temperature">12℃/28℃</p></div>
+            <div class="col">
+              <i class="fa-solid fa-cloud-showers-heavy"></i>
+            </div>
+            <div class="col">Wed</div>
+            <div class="col"><p class="temperature">8℃/22℃</p></div>
+            <div class="col"><i class="fa-solid fa-cloud-bolt"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/js_weather_last.js"></script>
+  </body>
+</html>
